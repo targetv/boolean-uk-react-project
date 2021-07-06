@@ -2,4 +2,43 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  scroll-behavior: smooth;
+}
+
+:root {
+  --blue: #0c7489;
+  --gold: #d5a021;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.container {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 25px;
+  position: sticky;
+  background-color: white;
+  border: 1px solid var(--blue);
+  top: 0;
+  z-index: 1;
+}
+
+.border {
+  border-top: none;
+  border-radius: 0px 0px 50px 50px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
 }

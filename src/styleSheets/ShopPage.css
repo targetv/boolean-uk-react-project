@@ -1,0 +1,29 @@
+.shopPageMain {
+  display: grid;
+  grid-template-rows: 300px 1fr;
+}
+
+.shopFilter {
+  display: grid;
+  place-content: center;
+  width: 100%;
+}
+
+.filterInput {
+  width: 700px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid var(--blue);
+  padding: 10px;
+  font-size: 1.2rem;
+}
+
+.shopCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+  grid-gap: 40px;
+}
+.shopCard {
+  border: 1px solid var(--blue);
+  height: 350px;
+}

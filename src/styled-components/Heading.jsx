@@ -2,7 +2,11 @@ import styled from "styled-components"
 
 
  const Heading = styled.h1`
-color: blue;
+color: white; 
+font-size: 5rem;
+font-weight: 200;
+
+
 
 `
 
