@@ -1,7 +1,9 @@
 import {Button} from "../styled-components/Buttons"
 import {FaShoppingBasket} from "react-icons/fa"
 import {Link} from "react-router-dom"
+import { useHistory } from "react-router"
 function Header(){
+    const history = useHistory()
     return (
         <header className="container border">
             <nav>
@@ -20,10 +22,10 @@ function Header(){
             <section className="right-column">
             <ul>
                     <li>
-                       <Button button>Login</Button>
+                       <Button  onClick={() => history.push("/login")} button>Login</Button>
                     </li>
                     <li>
-                    <Button button>SignUp</Button>
+                    <Button onClick={() => history.push("/signup")} button>SignUp</Button>
                     </li>
                     <li className="cart">
                         <Link to="/cart"><FaShoppingBasket className="shopping-cart"/></Link>

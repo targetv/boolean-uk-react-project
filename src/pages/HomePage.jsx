@@ -1,8 +1,9 @@
 import Heading from "../styled-components/Heading"
 import {FaChevronDown} from "react-icons/fa"
 
+
 function HomePage(){
-    
+ 
 
 
 
